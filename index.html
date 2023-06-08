@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Example table</caption>
+        <colgroup>
+            <col span="2" style="background-color: orangered;">
+            <col span="1" style="background-color: lightgreen;">
+            <col span="1" style="background-color: lightblue;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>101</td>
+                <td>101</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>101</td>
+                <td>101</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>101</td>
+                <td rowspan="2">101</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>101</td>
+                <!-- <td>101</td> -->
+                <td>101</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="2">Sum 1</td>
+            <!-- <td>Sum 2</td> -->
+            <td colspan="2">Sum 3</td>
+            <!-- <td>Sum 4</td> -->
+        </tfoot>
+    </table>
+</body>
+</html>
